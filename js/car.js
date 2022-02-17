@@ -1,10 +1,10 @@
 /**
  * Įvedus automobilio marke, degalu kieki bake ir kiek sunaudoja degalu mieste, automagistralėje ir vidutiniškai, grąžinamas sakinys ir suskaiciuojama kiek kilometru gali nuvaziuoti autoomobilis
- * @param {String} carName Automobilio modelis
- * @param {Number} fuelInTank Degalu kiekis bake
- * @param {Number} consHighway Degalu sąnaudos automagistraleje
- * @param {Number} consAverage Vidutinės degalu sanaudos 
- * @param {Number} consTown Degalų sąnaudos mieste
+ * @param {string} carName Automobilio modelis
+ * @param {number} fuelInTank Degalu kiekis bake
+ * @param {number} consHighway Degalu sąnaudos automagistraleje
+ * @param {number} consAverage Vidutinės degalu sanaudos 
+ * @param {number} consTown Degalų sąnaudos mieste
  * @returns Sakinys
  */
 
@@ -13,7 +13,7 @@ function car(carName, fuelInTank, consHighway, consAverage, consTown) {
     const averageKm = fuelInTank * 100 / consAverage
     const townKm = fuelInTank * 100 / consTown
 
-    return `${carName} su ${fuelInTank} baku, gali nuvaziuoti ${highwayKm.toFixed()}km (magistralej, kai sanaudos yra ${consHighway}l/100km), ${averageKm.toFixed()}km (vidutiniskai, kai sanaudos yra ${consAverage}l/100km) ir ${townKm.toFixed()}km (mieste, kai sanaudos yra ${consTown}l/100km`
+    return `${carName} su ${fuelInTank}l baku, gali nuvaziuoti ${highwayKm.toFixed()}km (magistralej, kai sanaudos yra ${consHighway}l/100km), ${averageKm.toFixed()}km (vidutiniskai, kai sanaudos yra ${consAverage}l/100km) ir ${townKm.toFixed()}km (mieste, kai sanaudos yra ${consTown}l/100km).`
 }
 
 module.exports = car;
